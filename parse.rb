@@ -52,7 +52,7 @@ puts "Saving CSV"
 job_listings = job_listings.values
 
 # Sort the items
-job_listings.sort_by!{ |h| h[:pub_date] }
+job_listings.sort_by!{ |h| h[:posted_on] }
 
 # Save as a CSV
 csv_filename = "we_work_remotely_jobs_#{Time.now.strftime("%Y%m%d%H%M%S")}.csv"
